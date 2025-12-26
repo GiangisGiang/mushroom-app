@@ -6,24 +6,23 @@ import pandas as pd
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
+app = FastAPI(title="Mushroom Classifier API")
+
 ART = Path("artifacts")
 MODEL_PATH = ART / "best_model.joblib"
 SCHEMA_PATH = ART / "schema_vi.json"
 
-app = FastAPI(title="Mushroom Classifier API")
-
-# Cho React (Vite) gọi khi chạy local
-origins = [
+# ✅ CORS
+ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
-    "https://393aebd7.mushroom-dok.pages.dev/",
-    "https://<custom-domain-if-any>",
+    "https://mushroom-dok.pages.dev",
 ]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
-    allow_credentials=True,
+    allow_origins=ALLOWED_ORIGINS,
+    allow_credentials=False,  # thường không cần cookie/credential
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -67,5 +66,4 @@ def predict(payload: dict):
             result["confidence"] = proba
         except Exception:
             pass
-
     return result
