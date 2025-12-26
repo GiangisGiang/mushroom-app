@@ -13,12 +13,15 @@ SCHEMA_PATH = ART / "schema_vi.json"
 app = FastAPI(title="Mushroom Classifier API")
 
 # Cho React (Vite) gọi khi chạy local
+origins = [
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+    "https://393aebd7.mushroom-dok.pages.dev/",
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",
-        "http://127.0.0.1:5173",
-    ],
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
