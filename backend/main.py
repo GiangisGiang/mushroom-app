@@ -12,17 +12,15 @@ ART = Path("artifacts")
 MODEL_PATH = ART / "best_model.joblib"
 SCHEMA_PATH = ART / "schema_vi.json"
 
-# ✅ CORS
-ALLOWED_ORIGINS = [
-    "http://localhost:5173",
-    "http://127.0.0.1:5173",
-    "https://mushroom-dok.pages.dev",
-]
-
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=ALLOWED_ORIGINS,
-    allow_credentials=False,  # thường không cần cookie/credential
+    allow_origins=[
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+        "https://mushroom-dok.pages.dev",
+    ],
+    allow_origin_regex=r"^https:\/\/([a-z0-9-]+\.)?mushroom-dok\.pages\.dev$",
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
