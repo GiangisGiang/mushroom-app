@@ -1,0 +1,345 @@
+{
+  "target": "class",
+  "labels": {
+    "e": "Ăn được",
+    "p": "Độc"
+  },
+  "features": [
+    {
+      "name": "odor",
+      "displayName": "odor",
+      "description": "Mùi khi ngửi nấm.",
+      "options": [
+        {
+          "value": "a",
+          "label": "Hạnh nhân",
+          "description": "Hạnh nhân"
+        },
+        {
+          "value": "c",
+          "label": "Hắc/nhựa đường",
+          "description": "Hắc/nhựa đường"
+        },
+        {
+          "value": "f",
+          "label": "Hôi",
+          "description": "Hôi"
+        },
+        {
+          "value": "l",
+          "label": "Hồi",
+          "description": "Hồi"
+        },
+        {
+          "value": "m",
+          "label": "Mốc",
+          "description": "Mốc"
+        },
+        {
+          "value": "n",
+          "label": "Không mùi",
+          "description": "Không mùi"
+        },
+        {
+          "value": "p",
+          "label": "Hăng",
+          "description": "Hăng"
+        },
+        {
+          "value": "s",
+          "label": "Cay/nồng",
+          "description": "Cay/nồng"
+        },
+        {
+          "value": "y",
+          "label": "Tanh cá",
+          "description": "Tanh cá"
+        }
+      ]
+    },
+    {
+      "name": "spore-print-color",
+      "displayName": "spore-print-color",
+      "description": "Màu bào tử in (dấu màu bào tử để lại).",
+      "options": [
+        {
+          "value": "b",
+          "label": "Vàng nhạt/be",
+          "description": "Vàng nhạt/be"
+        },
+        {
+          "value": "h",
+          "label": "Nâu sô-cô-la",
+          "description": "Nâu sô-cô-la"
+        },
+        {
+          "value": "k",
+          "label": "Đen",
+          "description": "Đen"
+        },
+        {
+          "value": "n",
+          "label": "Nâu",
+          "description": "Nâu"
+        },
+        {
+          "value": "o",
+          "label": "Cam",
+          "description": "Cam"
+        },
+        {
+          "value": "r",
+          "label": "Xanh lá",
+          "description": "Xanh lá"
+        },
+        {
+          "value": "u",
+          "label": "Tím",
+          "description": "Tím"
+        },
+        {
+          "value": "w",
+          "label": "Trắng",
+          "description": "Trắng"
+        },
+        {
+          "value": "y",
+          "label": "Vàng",
+          "description": "Vàng"
+        }
+      ]
+    },
+    {
+      "name": "gill-size",
+      "displayName": "gill-size",
+      "description": "Kích thước lá tia (phần phiến dưới mũ).",
+      "options": [
+        {
+          "value": "b",
+          "label": "Rộng",
+          "description": "Rộng"
+        },
+        {
+          "value": "n",
+          "label": "Hẹp",
+          "description": "Hẹp"
+        }
+      ]
+    },
+    {
+      "name": "gill-color",
+      "displayName": "gill-color",
+      "description": "Màu lá tia.",
+      "options": [
+        {
+          "value": "b",
+          "label": "Vàng nhạt/be",
+          "description": "Vàng nhạt/be"
+        },
+        {
+          "value": "e",
+          "label": "Đỏ",
+          "description": "Đỏ"
+        },
+        {
+          "value": "g",
+          "label": "Xám",
+          "description": "Xám"
+        },
+        {
+          "value": "h",
+          "label": "Nâu sô-cô-la",
+          "description": "Nâu sô-cô-la"
+        },
+        {
+          "value": "k",
+          "label": "Đen",
+          "description": "Đen"
+        },
+        {
+          "value": "n",
+          "label": "Nâu",
+          "description": "Nâu"
+        },
+        {
+          "value": "o",
+          "label": "Cam",
+          "description": "Cam"
+        },
+        {
+          "value": "p",
+          "label": "Hồng",
+          "description": "Hồng"
+        },
+        {
+          "value": "r",
+          "label": "Xanh lá",
+          "description": "Xanh lá"
+        },
+        {
+          "value": "u",
+          "label": "Tím",
+          "description": "Tím"
+        },
+        {
+          "value": "w",
+          "label": "Trắng",
+          "description": "Trắng"
+        },
+        {
+          "value": "y",
+          "label": "Vàng",
+          "description": "Vàng"
+        }
+      ]
+    },
+    {
+      "name": "ring-type",
+      "displayName": "ring-type",
+      "description": "Kiểu vòng (vành) trên cuống nấm.",
+      "options": [
+        {
+          "value": "e",
+          "label": "Dễ biến mất",
+          "description": "Dễ biến mất"
+        },
+        {
+          "value": "f",
+          "label": "Loe",
+          "description": "Loe"
+        },
+        {
+          "value": "l",
+          "label": "Lớn",
+          "description": "Lớn"
+        },
+        {
+          "value": "n",
+          "label": "Không có",
+          "description": "Không có"
+        },
+        {
+          "value": "p",
+          "label": "Rủ xuống",
+          "description": "Rủ xuống"
+        }
+      ]
+    },
+    {
+      "name": "habitat",
+      "displayName": "habitat",
+      "description": "Môi trường sống của nấm.",
+      "options": [
+        {
+          "value": "d",
+          "label": "Rừng",
+          "description": "Rừng"
+        },
+        {
+          "value": "g",
+          "label": "Cỏ",
+          "description": "Cỏ"
+        },
+        {
+          "value": "l",
+          "label": "Lá rụng",
+          "description": "Lá rụng"
+        },
+        {
+          "value": "m",
+          "label": "Đồng cỏ",
+          "description": "Đồng cỏ"
+        },
+        {
+          "value": "p",
+          "label": "Lối đi",
+          "description": "Lối đi"
+        },
+        {
+          "value": "u",
+          "label": "Đô thị",
+          "description": "Đô thị"
+        },
+        {
+          "value": "w",
+          "label": "Bãi rác/thải",
+          "description": "Bãi rác/thải"
+        }
+      ]
+    },
+    {
+      "name": "bruises",
+      "displayName": "bruises",
+      "description": "Có bị bầm/đổi màu khi chạm không.",
+      "options": [
+        {
+          "value": "f",
+          "label": "Không bầm/dập",
+          "description": "Không bầm/dập"
+        },
+        {
+          "value": "t",
+          "label": "Có bầm/dập",
+          "description": "Có bầm/dập"
+        }
+      ]
+    },
+    {
+      "name": "cap-color",
+      "displayName": "cap-color",
+      "description": "Màu mũ nấm.",
+      "options": [
+        {
+          "value": "b",
+          "label": "Vàng nhạt/be",
+          "description": "Vàng nhạt/be"
+        },
+        {
+          "value": "c",
+          "label": "Nâu quế",
+          "description": "Nâu quế"
+        },
+        {
+          "value": "e",
+          "label": "Đỏ",
+          "description": "Đỏ"
+        },
+        {
+          "value": "g",
+          "label": "Xám",
+          "description": "Xám"
+        },
+        {
+          "value": "n",
+          "label": "Nâu",
+          "description": "Nâu"
+        },
+        {
+          "value": "p",
+          "label": "Hồng",
+          "description": "Hồng"
+        },
+        {
+          "value": "r",
+          "label": "Xanh lá",
+          "description": "Xanh lá"
+        },
+        {
+          "value": "u",
+          "label": "Tím",
+          "description": "Tím"
+        },
+        {
+          "value": "w",
+          "label": "Trắng",
+          "description": "Trắng"
+        },
+        {
+          "value": "y",
+          "label": "Vàng",
+          "description": "Vàng"
+        }
+      ]
+    }
+  ]
+}
