@@ -16,7 +16,8 @@ app = FastAPI(title="Mushroom Classifier API")
 origins = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
-    "https://393aebd7.mushroom-dok.pages.dev/"
+    "https://393aebd7.mushroom-dok.pages.dev/",
+    "https://<custom-domain-if-any>",
 ]
 
 app.add_middleware(
